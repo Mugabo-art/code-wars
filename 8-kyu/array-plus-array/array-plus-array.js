@@ -1,11 +1,5 @@
 function arrayPlusArray(arr1, arr2) {
-   //something went wrong
-  let sum = 0;
-  for (let i=0;i< arr1.length;i++){
-     sum += arr1[i]
-  }
-  for (let i=0 ; i< arr2.length;i++){
-     sum += arr2[i]
-  }
-  return sum;
+  let combined = arr1.concat(arr2);
+  let totalSum = combined.reduce((a,b) => a+b,0)
+  return totalSum; //something went wrong
 }
